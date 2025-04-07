@@ -17,3 +17,5 @@ class BlogPostViewSet(viewsets.ModelViewSet):
     post.likes += 1
     post.save()
     return Response({'likes': post.likes})
+  
+  
